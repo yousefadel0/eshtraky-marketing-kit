@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -20 500 340" width="500" height="340" role="img" aria-label="اشتراكي">
+  <defs>
+    <!-- White body with a soft warm shade at the bottom, outlined in the brand lime #D6FF00. -->
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E6E2CF"/>
+    </linearGradient>
+    <filter id="halo" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="0" dy="0" stdDeviation="9" flood-color="#D6FF00" flood-opacity=".8"/></filter>
+    <!-- Cut-outs: the ring inside the body and the hole in the loop. -->
+    <mask id="cut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="500" height="340">
+      <rect x="-20" y="-20" width="500" height="340" fill="#fff"/>
+      <circle cx="217" cy="145" r="78" fill="#000"/>
+      <circle cx="217" cy="145" r="60" fill="#fff"/>
+      <circle cx="67" cy="60" r="12" fill="#000"/>
+    </mask>
+  </defs>
+  <g filter="url(#halo)">
+    <g mask="url(#cut)" fill="url(#body)" stroke="#D6FF00" stroke-width="14" stroke-linejoin="round">
+      <circle cx="215" cy="147" r="140"/>
+      <rect x="215" y="10" width="235" height="85"/>
+      <circle cx="60" cy="60" r="38"/>
+    </g>
+  </g>
+</svg>
